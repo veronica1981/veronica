@@ -1,0 +1,1 @@
+sqlcmd -S "FCCLSERVER\FCCL" -E -i "F:\portal\backup.sql"

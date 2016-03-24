@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Projects\fccl-milkquality\FCCLDeploy\Fccl</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ASPNETPortal.css">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="AuthPage.aspx">
+      <publishTime>08/21/2015 14:57:50</publishTime>
+    </File>
+    <File Include="bin/DocX.dll">
+      <publishTime>08/21/2015 14:58:34</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>08/21/2015 14:58:00</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>08/21/2015 14:58:00</publishTime>
+    </File>
+    <File Include="bin/FCCLSite.dll">
+      <publishTime>10/12/2015 13:36:44</publishTime>
+    </File>
+    <File Include="bin/FCCL_BL.dll">
+      <publishTime>09/23/2015 11:41:12</publishTime>
+    </File>
+    <File Include="bin/FCCL_DAL.dll">
+      <publishTime>09/23/2015 11:41:12</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CSharp.dll">
+      <publishTime>08/13/2013 00:19:06</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.Common.dll">
+      <publishTime>06/28/2011 01:35:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WebForms.dll">
+      <publishTime>06/28/2011 01:35:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WinForms.dll">
+      <publishTime>06/28/2011 01:35:08</publishTime>
+    </File>
+    <File Include="bin/NLog.config">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="bin/NLog.dll">
+      <publishTime>08/21/2015 14:58:20</publishTime>
+    </File>
+    <File Include="bin/NLog.Web.dll">
+      <publishTime>08/21/2015 14:58:35</publishTime>
+    </File>
+    <File Include="bin/ReportCumulat4.rdlc">
+      <publishTime>10/12/2015 12:27:52</publishTime>
+    </File>
+    <File Include="bin/ReportFabrica4.rdlc">
+      <publishTime>10/12/2015 12:27:52</publishTime>
+    </File>
+    <File Include="bin/ReportFabricaExcel4.rdlc">
+      <publishTime>10/12/2015 12:27:52</publishTime>
+    </File>
+    <File Include="bin/ReportFabricaIntre4.rdlc">
+      <publishTime>10/12/2015 12:27:52</publishTime>
+    </File>
+    <File Include="bin/ReportFCB4.rdlc">
+      <publishTime>10/12/2015 12:27:52</publishTime>
+    </File>
+    <File Include="bin/ReportFerme4.rdlc">
+      <publishTime>10/12/2015 12:27:52</publishTime>
+    </File>
+    <File Include="Comenzi.aspx">
+      <publishTime>08/21/2015 14:57:51</publishTime>
+    </File>
+    <File Include="Content/themes/base/accordion.css">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/all.css">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/autocomplete.css">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/base.css">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/button.css">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/core.css">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/datepicker.css">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/dialog.css">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/draggable.css">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_222222_256x240.png">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_454545_256x240.png">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_888888_256x240.png">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/menu.css">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/progressbar.css">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/resizable.css">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/selectable.css">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/selectmenu.css">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/slider.css">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/sortable.css">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/spinner.css">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/tabs.css">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/theme.css">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/tooltip.css">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="CreateUser.aspx">
+      <publishTime>08/21/2015 14:57:50</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>08/21/2015 14:57:50</publishTime>
+    </File>
+    <File Include="DetailsFabrici.aspx">
+      <publishTime>08/21/2015 14:57:51</publishTime>
+    </File>
+    <File Include="DetailsFerme.aspx">
+      <publishTime>08/21/2015 14:57:54</publishTime>
+    </File>
+    <File Include="DetailsFermieri.aspx">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="DetailsMostre.aspx">
+      <publishTime>08/21/2015 14:57:50</publishTime>
+    </File>
+    <File Include="DetailsPrelevatori.aspx">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="DetaliuMostra.aspx">
+      <publishTime>08/21/2015 14:57:50</publishTime>
+    </File>
+    <File Include="EditareFabrici.aspx">
+      <publishTime>08/21/2015 14:57:50</publishTime>
+    </File>
+    <File Include="EditareFerme.aspx">
+      <publishTime>08/21/2015 14:57:53</publishTime>
+    </File>
+    <File Include="EditareFermieri.aspx">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="EditareMostre.aspx">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="EditarePrelevatori.aspx">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="EditFerme_CCL.aspx">
+      <publishTime>09/09/2015 17:29:00</publishTime>
+    </File>
+    <File Include="EditMostre.aspx">
+      <publishTime>09/09/2015 17:29:00</publishTime>
+    </File>
+    <File Include="Email2.aspx">
+      <publishTime>09/09/2015 17:29:00</publishTime>
+    </File>
+    <File Include="EmailAutomat.aspx">
+      <publishTime>08/21/2015 14:57:51</publishTime>
+    </File>
+    <File Include="EmailManual.aspx">
+      <publishTime>08/21/2015 14:57:50</publishTime>
+    </File>
+    <File Include="images/fccl2.jpg">
+      <publishTime>08/21/2015 14:57:53</publishTime>
+    </File>
+    <File Include="images/header.bmp">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/LogoFCCL.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/MNA-LI-644-F-CONTR LAPTELUI.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/MNA-LI-644-F-CONTR LAPTELUIx.JPG">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/renar.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/renar2.jpg">
+      <publishTime>08/21/2015 14:57:53</publishTime>
+    </File>
+    <File Include="images/renar2013.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/renar3.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/renar4.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/renar5.JPG">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/renarab.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/renarab13.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/renarab2.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/renarcolor.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/renarm.bmp">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/Alina.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/Alina.jpg_ani">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/Alina_old.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/Arghir.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/Arghir.jpg_ani">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/Arghir_old.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/Carmen.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/Carmen.jpg_ani">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/Carmen_old.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/Copy %282%29 of Ramona.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/Copy of Alina.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/Copy of Arghir.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/Copy of Carmen.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/Copy of Ramona.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/Copy of Susana.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/CVS/Entries">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/CVS/Entries.Extra">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/CVS/Entries.Extra.Old">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/CVS/Entries.Old">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/CVS/Repository">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/CVS/Root">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/Ramona.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/Ramona.jpg_ani">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/Semnatura Ramona Mandrusca.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/Semnaturi FCCL.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/Stampila_color.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/Stampila_color.jpg_ani">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/Susana.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/Susana.jpg_ani">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/_vti_cnf/Arghir.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/_vti_cnf/Ramona.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Semnaturi/_vti_cnf/Susana.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/stampila2.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="images/Stampilacolor.jpg">
+      <publishTime>08/21/2015 14:57:52</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>08/21/2015 14:57:50</publishTime>
+    </File>
+    <File Include="MasterPage.master">
+      <publishTime>08/21/2015 14:57:54</publishTime>
+    </File>
+    <File Include="NLog.config">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>08/21/2015 14:57:50</publishTime>
+    </File>
+    <File Include="RaportFabrica4.aspx">
+      <publishTime>08/21/2015 14:57:50</publishTime>
+    </File>
+    <File Include="RaportFabricaIntre4.aspx">
+      <publishTime>08/21/2015 14:57:50</publishTime>
+    </File>
+    <File Include="RaportFCB4.aspx">
+      <publishTime>08/21/2015 14:57:54</publishTime>
+    </File>
+    <File Include="RaportFerme4.aspx">
+      <publishTime>08/21/2015 14:57:50</publishTime>
+    </File>
+    <File Include="Receptii.aspx">
+      <publishTime>08/21/2015 14:57:54</publishTime>
+    </File>
+    <File Include="Registru.aspx">
+      <publishTime>09/09/2015 17:29:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.1.3.js">
+      <publishTime>08/21/2015 14:57:54</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.1.3.min.js">
+      <publishTime>08/21/2015 14:57:54</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.1.3.min.map">
+      <publishTime>08/21/2015 14:57:54</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.11.4.js">
+      <publishTime>08/21/2015 14:57:54</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.11.4.min.js">
+      <publishTime>08/21/2015 14:57:54</publishTime>
+    </File>
+    <File Include="SmsArchive.aspx">
+      <publishTime>08/21/2015 14:57:50</publishTime>
+    </File>
+    <File Include="SmsAutomat.aspx">
+      <publishTime>08/21/2015 14:57:50</publishTime>
+    </File>
+    <File Include="SmsList.aspx">
+      <publishTime>08/21/2015 14:57:50</publishTime>
+    </File>
+    <File Include="SmsTest.aspx">
+      <publishTime>08/21/2015 14:57:51</publishTime>
+    </File>
+    <File Include="ValidareMostre.aspx">
+      <publishTime>08/21/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>10/05/2015 17:42:04</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

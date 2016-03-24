@@ -1,0 +1,12 @@
+D:\Projects\fccl-milkquality\trunk\FCCL\FCCL_DAL\bin\Debug\FCCL_DAL.dll.config
+D:\Projects\fccl-milkquality\trunk\FCCL\FCCL_DAL\bin\Debug\FCCL_DAL.dll
+D:\Projects\fccl-milkquality\trunk\FCCL\FCCL_DAL\bin\Debug\FCCL_DAL.pdb
+D:\Projects\fccl-milkquality\trunk\FCCL\FCCL_DAL\bin\Debug\EntityFramework.dll
+D:\Projects\fccl-milkquality\trunk\FCCL\FCCL_DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\fccl-milkquality\trunk\FCCL\FCCL_DAL\bin\Debug\NLog.dll
+D:\Projects\fccl-milkquality\trunk\FCCL\FCCL_DAL\bin\Debug\EntityFramework.xml
+D:\Projects\fccl-milkquality\trunk\FCCL\FCCL_DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\fccl-milkquality\trunk\FCCL\FCCL_DAL\bin\Debug\NLog.xml
+D:\Projects\fccl-milkquality\trunk\FCCL\FCCL_DAL\obj\Debug\FCCL_DAL.csprojResolveAssemblyReference.cache
+D:\Projects\fccl-milkquality\trunk\FCCL\FCCL_DAL\obj\Debug\FCCL_DAL.dll
+D:\Projects\fccl-milkquality\trunk\FCCL\FCCL_DAL\obj\Debug\FCCL_DAL.pdb

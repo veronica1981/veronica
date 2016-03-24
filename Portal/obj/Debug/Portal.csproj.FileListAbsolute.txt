@@ -1,0 +1,16 @@
+D:\Projects\fccl-milkquality\trunk\FCCL\Portal\bin\Portal.dll.config
+D:\Projects\fccl-milkquality\trunk\FCCL\Portal\bin\Portal.dll
+D:\Projects\fccl-milkquality\trunk\FCCL\Portal\bin\Portal.pdb
+D:\Projects\fccl-milkquality\trunk\FCCL\Portal\bin\EntityFramework.dll
+D:\Projects\fccl-milkquality\trunk\FCCL\Portal\bin\EntityFramework.SqlServer.dll
+D:\Projects\fccl-milkquality\trunk\FCCL\Portal\bin\Ionic.Zip.dll
+D:\Projects\fccl-milkquality\trunk\FCCL\Portal\bin\NLog.dll
+D:\Projects\fccl-milkquality\trunk\FCCL\Portal\bin\NPOI.dll
+D:\Projects\fccl-milkquality\trunk\FCCL\Portal\bin\EntityFramework.xml
+D:\Projects\fccl-milkquality\trunk\FCCL\Portal\bin\EntityFramework.SqlServer.xml
+D:\Projects\fccl-milkquality\trunk\FCCL\Portal\bin\NLog.xml
+D:\Projects\fccl-milkquality\trunk\FCCL\Portal\obj\Debug\Portal.csprojResolveAssemblyReference.cache
+D:\Projects\fccl-milkquality\trunk\FCCL\Portal\obj\Debug\RdlCompile.cache
+D:\Projects\fccl-milkquality\trunk\FCCL\Portal\obj\Debug\RdlCompile.compiled
+D:\Projects\fccl-milkquality\trunk\FCCL\Portal\obj\Debug\Portal.dll
+D:\Projects\fccl-milkquality\trunk\FCCL\Portal\obj\Debug\Portal.pdb

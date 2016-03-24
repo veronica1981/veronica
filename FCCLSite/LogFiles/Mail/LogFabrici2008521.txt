@@ -1,0 +1,20 @@
+21/05/2008 15:56:58 ==> *****Start send mail*****
+21/05/2008 15:56:58 ==> Fabricii: -SCAgrotranscomexSRL.pdf cu adresa de email: agrotranscomex@lorinfo.ro i-a fost trimis fisierul: RaportFabrica19_05_2008_40-SCAgrotranscomexSRL.pdf,RaportFabrica19_05_2008_40-SCAgrotranscomexSRL.xls
+21/05/2008 15:56:58 ==> Fabricii: -SCPicolactSRL.pdf cu adresa de email: picolact@yahoo.com i-a fost trimis fisierul: RaportFabrica19_05_2008_42-SCPicolactSRL.pdf,RaportFabrica19_05_2008_42-SCPicolactSRL.xls
+21/05/2008 15:56:58 ==> Fabricii: -SCUnichimSRL.pdf cu adresa de email: studnianskiremus@unilact.ro i-a fost trimis fisierul: RaportFabrica19_05_2008_50-SCUnichimSRL.pdf,RaportFabrica19_05_2008_50-SCUnichimSRL.xls
+21/05/2008 15:56:58 ==> Fabricii: -NapolactCluj.pdf cu adresa de email: horatiu.salagean@napolact.com;maria.fit@napolact.com i-a fost trimis fisierul: RaportFabrica19_05_2008_7-NapolactCluj.pdf,RaportFabrica19_05_2008_7-NapolactCluj.xls
+21/05/2008 15:56:58 ==> Fabricii: -SCILMures.pdf cu adresa de email: gheorghe.rus@frieslandfoods.ro;adriana.cohut@frieslandfoods.ro i-a fost trimis fisierul: RaportFabrica19_05_2008_9-SCILMures.pdf,RaportFabrica19_05_2008_9-SCILMures.xls
+21/05/2008 15:59:11 ==> *****Start send mail*****
+21/05/2008 15:59:11 ==> Fabricii: -SCAgrotranscomexSRL.pdf cu adresa de email: agrotranscomex@lorinfo.ro i-a fost trimis fisierul: RaportFabrica19_05_2008_40-SCAgrotranscomexSRL.pdf,RaportFabrica19_05_2008_40-SCAgrotranscomexSRL.xls
+21/05/2008 15:59:11 ==> Fabricii: -SCPicolactSRL.pdf cu adresa de email: picolact@yahoo.com i-a fost trimis fisierul: RaportFabrica19_05_2008_42-SCPicolactSRL.pdf,RaportFabrica19_05_2008_42-SCPicolactSRL.xls
+21/05/2008 15:59:11 ==> Fabricii: -SCUnichimSRL.pdf cu adresa de email: studnianskiremus@unilact.ro i-a fost trimis fisierul: RaportFabrica19_05_2008_50-SCUnichimSRL.pdf,RaportFabrica19_05_2008_50-SCUnichimSRL.xls
+21/05/2008 15:59:11 ==> Fabricii: -NapolactCluj.pdf cu adresa de email: horatiu.salagean@napolact.com;maria.fit@napolact.com i-a fost trimis fisierul: RaportFabrica19_05_2008_7-NapolactCluj.pdf,RaportFabrica19_05_2008_7-NapolactCluj.xls
+21/05/2008 15:59:11 ==> Fabricii: -SCILMures.pdf cu adresa de email: gheorghe.rus@frieslandfoods.ro;adriana.cohut@frieslandfoods.ro i-a fost trimis fisierul: RaportFabrica19_05_2008_9-SCILMures.pdf,RaportFabrica19_05_2008_9-SCILMures.xls
+21/05/2008 16:05:00 ==> *****Start send mail*****
+21/05/2008 16:05:00 ==> Fabricii: -AsociatiaTranssylvania.pdf cu adresa de email: asociatia_transsylvania@yahoo.com i-a fost trimis fisierul: RaportFabrica20_05_2008_10-AsociatiaTranssylvania.pdf,RaportFabrica20_05_2008_10-AsociatiaTranssylvania.xls
+21/05/2008 16:05:00 ==> Fabricii: -MirdatodIbanesti.pdf cu adresa de email: mirdatod@yahoo.com i-a fost trimis fisierul: RaportFabrica20_05_2008_12-MirdatodIbanesti.pdf,RaportFabrica20_05_2008_12-MirdatodIbanesti.xls
+21/05/2008 16:05:00 ==> Fabricii: -FrieslandRomania.pdf cu adresa de email: paul.banhegyesi@frieslandfoods.ro;norbert.torok@frieslandfoods.ro;mail12@frieslandfoods.ro i-a fost trimis fisierul: RaportFabrica20_05_2008_3-FrieslandRomania.pdf,RaportFabrica20_05_2008_3-FrieslandRomania.xls
+21/05/2008 16:05:01 ==> Fabricii: -FrieslandTimisoara.pdf cu adresa de email: florin.balu@frieslandfoods.ro;norbert.torok@frieslandfoods.ro i-a fost trimis fisierul: RaportFabrica20_05_2008_4-FrieslandTimisoara.pdf,RaportFabrica20_05_2008_4-FrieslandTimisoara.xls
+21/05/2008 16:05:01 ==> Fabricii: -NapolactCluj.pdf cu adresa de email: horatiu.salagean@napolact.com;maria.fit@napolact.com i-a fost trimis fisierul: RaportFabrica20_05_2008_7-NapolactCluj.pdf,RaportFabrica20_05_2008_7-NapolactCluj.xls
+21/05/2008 16:05:01 ==> Fabricii: -SCDeluxeSrl.pdf cu adresa de email: fredex_go@yahoo.com i-a fost trimis fisierul: RaportFabrica20_05_2008_82-SCDeluxeSrl.pdf,RaportFabrica20_05_2008_82-SCDeluxeSrl.xls
+21/05/2008 16:05:01 ==> Fabricii: -HochlandRomania.pdf cu adresa de email: Cosmina.Homorozan@hochland.com i-a fost trimis fisierul: RaportFabrica20_05_2008_83-HochlandRomania.pdf,RaportFabrica20_05_2008_83-HochlandRomania.xls

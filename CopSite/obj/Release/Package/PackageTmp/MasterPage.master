@@ -1,0 +1,167 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="MasterPage" Debug="true" Codebehind="MasterPage.master.cs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Home Page</title>
+	<script type="text/javascript" language="javascript" src="Scripts/jquery-2.1.3.min.js"></script> 
+	<script type="text/javascript" language="javascript" src="Scripts/jquery-ui-1.11.4.min.js"></script>
+	<link href="Content/themes/base/all.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+
+
+<script language="javascript" type="text/javascript">
+<!--
+    $(window).load(function () {
+        $('.useDatepicker').datepicker({ dateFormat: 'dd/mm/yy', firstDay: 1 });
+    });
+
+function DateValidate(sender, args) {
+ 
+    args.IsValid = true;
+    var sDate = args.Value;
+    if (sDate == "") return true;
+    var iDay, iMonth, iYear;
+    var arrValues;
+    var today = new Date();
+    arrValues = sDate.split("/");
+    iDay = arrValues[0];
+    iMonth = arrValues[1];
+    iYear = arrValues[2];
+    if ((iMonth == null) || (iYear == null)) {args.IsValid = false; return;}
+    if ((iDay > 31) || (iMonth > 12) || 
+        (iYear < 1900 || iYear > today.getFullYear())) 
+     {args.IsValid = false; return;}
+    var dummyDate = new Date(iYear, iMonth - 1, iDay);
+    if ((dummyDate.getDate() != iDay) || 
+      (dummyDate.getMonth() != iMonth - 1) || 
+      (dummyDate.getFullYear() != iYear)) 
+      {  //alert("Invalid date");
+         args.IsValid = false;
+         return;
+         }
+    return;
+}
+
+function DateValidateReq(sender, args) {
+ 
+    args.IsValid = true;
+    var sDate = args.Value;
+    if (sDate == "") return false;
+    var iDay, iMonth, iYear;
+    var arrValues;
+    var today = new Date();
+    arrValues = sDate.split("/");
+    iDay = arrValues[0];
+    iMonth = arrValues[1];
+    iYear = arrValues[2];
+    if ((iMonth == null) || (iYear == null)) {args.IsValid = false; return;}
+    if ((iDay > 31) || (iMonth > 12) || 
+        (iYear < 1900 || iYear > today.getFullYear())) 
+     {args.IsValid = false; return;}
+    var dummyDate = new Date(iYear, iMonth - 1, iDay);
+    if ((dummyDate.getDate() != iDay) || 
+      (dummyDate.getMonth() != iMonth - 1) || 
+      (dummyDate.getFullYear() != iYear)) 
+      {  //alert("Invalid date");
+         args.IsValid = false;
+         return;
+         }
+    return;
+}
+// -->
+</script>     
+</head>
+<body>
+    <form id="form1" runat="server">
+   <asp:Panel Width="90%" runat=server ID=panelHead>
+    <div>
+       
+    </div>
+    <div>
+    <table cellpadding=0 cellspacing=0  width=100% border=0 bgcolor ="#3CB371">
+    <tr>
+    <td style="width: 10%">
+    </td>
+    <td colspan=4>
+    <br />
+     <asp:Image ID="Image1" runat="server"  SkinId="HomeImage1"  
+            Height="210"  />
+      <br />
+    </td>
+
+    </tr>
+    <tr>
+    <td style="width: 20%;">
+        <asp:Menu ID="Menu1" runat="server" >
+            <Items>
+                <asp:MenuItem Text="Pagina principala" Value="Home" NavigateUrl="~/Login.aspx"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+    </td>
+    <td style="width: 20%;">
+        <asp:Menu ID="Menu2" runat="server">
+            <Items>
+                <asp:MenuItem Text="Mostre" Value="Mostre">
+                    <asp:MenuItem Text="Validare" Value="Validare" NavigateUrl="~/ValidareMostre.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Actualizare" Value="Actualizare" NavigateUrl="~/EditareMostre.aspx"></asp:MenuItem>
+                </asp:MenuItem>
+            </Items>
+         </asp:Menu>
+    
+    </td>
+    <td style="width:20%">
+        <asp:Menu ID="Menu3" runat="server"> 
+            <Items>
+                <asp:MenuItem Text="Date utile" Value="Editare">
+                    <asp:MenuItem Text="Asociatii" Value="Fabrici" NavigateUrl="~/EditareFabrici.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Ferme" Value="Ferme" NavigateUrl="~/EditareFerme.aspx"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/EditareCrotalii.aspx" Text="Crotalii" Value="Crotalii">
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Prelevatori" Value="Prelevatori" NavigateUrl="~/EditarePrelevatori.aspx"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/EditareUseri.aspx" Text="Useri Portal" 
+                        Value="Useri Portal"></asp:MenuItem>
+                </asp:MenuItem>
+            </Items>
+        </asp:Menu>
+    </td>
+    <td style="width:20%">
+        <asp:Menu ID="Menu4" runat="server">
+              <Items>
+                <asp:MenuItem Text="Rapoarte" Value="Rapoarte">
+                    <asp:MenuItem NavigateUrl="~/RaportCrotalii.aspx" Text="Raport Zilnic"  Value="R. Fabrica Zilnic"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/RaportRegistru.aspx" Text="Raport Registru" 
+                        Value="Raport Registru"></asp:MenuItem>
+                </asp:MenuItem>
+            </Items>
+               </asp:Menu>
+    </td>
+    <td class="width:20%">
+        <asp:Menu ID="Menu5" runat="server">
+            <Items>
+                <asp:MenuItem Text="Trimitere rapoarte" Value="Email">
+                    <asp:MenuItem Text="Email manual" Value="EmailM" NavigateUrl="~/EmailManual.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Email Automat" Value="EmailA" NavigateUrl="~/EmailAutomat.aspx?ferme=1"></asp:MenuItem>
+					   <asp:MenuItem Text="Sms" Value="TestSms" NavigateUrl="~/SmsTest.aspx"></asp:MenuItem>
+                     <asp:MenuItem Text="Sms Ferme" Value="SendSms" NavigateUrl="~/SmsAutomat.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Email Registru" Value="EmailReg" NavigateUrl="~/EmailRegistru.aspx"></asp:MenuItem>
+                  
+                 </asp:MenuItem>
+            </Items>
+        </asp:Menu>
+    </td> 
+    </tr>
+    
+    </table>
+   <br/>
+   </div>
+   </asp:Panel>
+    <div>
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+       
+        </asp:contentplaceholder>
+    </div>
+    </form>
+</body>
+</html>

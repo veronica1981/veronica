@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="fccl_v2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Interval">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Created" Type="datetime" Nullable="false" />
+          <Property Name="Updated" Type="datetime" />
+          <Property Name="Type" Type="smallint" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="63" Nullable="false" />
+          <Property Name="MinVal" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="MaxVal" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Application" Type="smallint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Machine">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Created" Type="datetime" Nullable="false" />
+          <Property Name="Updated" Type="datetime" />
+          <Property Name="Name" Type="varchar" MaxLength="63" Nullable="false" />
+          <Property Name="RemotePath" Type="varchar" MaxLength="511" Nullable="false" />
+          <Property Name="LocalDownloadPathFormat" Type="varchar" MaxLength="511" />
+          <Property Name="LocalSavePathFormat" Type="varchar" MaxLength="511" Nullable="false" />
+          <Property Name="FileFilter" Type="varchar" MaxLength="63" Nullable="false" />
+          <Property Name="Application" Type="smallint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Created" Type="datetime" Nullable="false" />
+          <Property Name="Updated" Type="datetime" />
+          <Property Name="Application" Type="smallint" />
+          <Property Name="OrderNumber" Type="bigint" Nullable="false" />
+          <Property Name="FullOrderNumber" Type="varchar" MaxLength="63" Nullable="false" />
+          <Property Name="ClientId" Type="int" Nullable="false" />
+          <Property Name="ClientName" Type="varchar" MaxLength="511" Nullable="false" />
+          <Property Name="SampleDate" Type="datetime" Nullable="false" />
+          <Property Name="ReceivedDate" Type="datetime" Nullable="false" />
+          <Property Name="Imported" Type="bit" Nullable="false" />
+          <Property Name="AnalyzedSampleCount" Type="int" />
+          <Property Name="SampleCount" Type="int" />
+        </EntityType>
+        <EntityType Name="Report">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Created" Type="datetime" Nullable="false" />
+          <Property Name="Updated" Type="datetime" />
+          <Property Name="Application" Type="smallint" Nullable="false" />
+          <Property Name="ReportType" Type="smallint" Nullable="false" />
+          <Property Name="ReportNumber" Type="bigint" Nullable="false" />
+          <Property Name="ObjectId" Type="int" Nullable="false" />
+          <Property Name="ObjectName" Type="nvarchar" MaxLength="511" Nullable="false" />
+          <Property Name="TestDate" Type="date" Nullable="false" />
+          <Property Name="PrintDate" Type="date" Nullable="false" />
+          <Property Name="PageCount" Type="int" />
+          <Property Name="SampleCount" Type="int" />
+        </EntityType>
+        <EntityType Name="Setting">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="63" Nullable="false" />
+          <Property Name="Value" Type="varchar" MaxLength="63" Nullable="false" />
+          <Property Name="Application" Type="smallint" Nullable="false" />
+        </EntityType>
+        <Function Name="sp_Get_RegistruRegeptie" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TestDate" Type="date" Mode="In" />
+        </Function>
+        <Function Name="sp_Get_Users" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="userName" Type="varchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="fccl_v2ModelStoreContainer">
+          <EntitySet Name="Interval" EntityType="Self.Interval" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Machine" EntityType="Self.Machine" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Order" EntityType="Self.Order" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Report" EntityType="Self.Report" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Setting" EntityType="Self.Setting" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="fcclModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="FCCLEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Intervals" EntityType="fcclModel.Interval" />
+          <EntitySet Name="Machines" EntityType="fcclModel.Machine" />
+          <EntitySet Name="Settings" EntityType="fcclModel.Setting" />
+          <EntitySet Name="Reports" EntityType="fcclModel.Report" />
+          <EntitySet Name="Orders" EntityType="fcclModel.Order" />
+          <FunctionImport Name="sp_Get_RegistruRegeptie" ReturnType="Collection(fcclModel.sp_Get_RegistruRegeptie_Result)">
+          <Parameter Name="TestDate" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="sp_Get_Users" ReturnType="Collection(fcclModel.sp_Get_Users_Result)">
+            <Parameter Name="userName" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+        <EntityType Name="Interval">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Updated" Type="DateTime" Precision="3" />
+          <Property Name="Type" Type="Int16" Nullable="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="63" FixedLength="false" Unicode="false" />
+          <Property Name="MinVal" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="MaxVal" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="Application" Type="Int16" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Machine">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Updated" Type="DateTime" Precision="3" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="63" FixedLength="false" Unicode="false" />
+          <Property Name="RemotePath" Type="String" Nullable="false" MaxLength="511" FixedLength="false" Unicode="false" />
+          <Property Name="FileFilter" Type="String" Nullable="false" MaxLength="63" FixedLength="false" Unicode="false" />
+          <Property Name="Application" Type="Int16" Nullable="false" />
+          <Property Name="LocalDownloadPathFormat" Type="String" MaxLength="511" FixedLength="false" Unicode="false" />
+          <Property Name="LocalSavePathFormat" Type="String" Nullable="false" MaxLength="511" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Setting">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="63" FixedLength="false" Unicode="false" />
+          <Property Name="Value" Type="String" Nullable="false" MaxLength="63" FixedLength="false" Unicode="false" />
+          <Property Name="Application" Type="Int16" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Report">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Updated" Type="DateTime" Precision="3" />
+          <Property Name="Application" Type="Int16" Nullable="false" />
+          <Property Name="ReportType" Type="Int16" Nullable="false" />
+          <Property Name="ReportNumber" Type="Int64" Nullable="false" />
+          <Property Name="ObjectId" Type="Int32" Nullable="false" />
+          <Property Name="ObjectName" Type="String" Nullable="false" MaxLength="511" FixedLength="false" Unicode="true" />
+          <Property Name="TestDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="PrintDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="PageCount" Type="Int32" />
+          <Property Name="SampleCount" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Updated" Type="DateTime" Precision="3" />
+          <Property Name="OrderNumber" Type="Int64" Nullable="false" />
+          <Property Name="FullOrderNumber" Type="String" Nullable="false" MaxLength="63" FixedLength="false" Unicode="false" />
+          <Property Name="ClientId" Type="Int32" Nullable="false" />
+          <Property Name="ClientName" Type="String" Nullable="false" MaxLength="511" FixedLength="false" Unicode="false" />
+          <Property Name="SampleDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ReceivedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Imported" Type="Boolean" Nullable="false" />
+          <Property Name="AnalyzedSampleCount" Type="Int32" />
+          <Property Name="SampleCount" Type="Int32" />
+          <Property Name="Application" Type="Int16" />
+        </EntityType>
+        <ComplexType Name="sp_Get_RegistruRegeptie_Result">
+          <Property Type="String" Name="NrComanda" Nullable="true" MaxLength="150" />
+          <Property Type="String" Name="NumeCodPrelevator" Nullable="true" MaxLength="150" />
+          <Property Type="String" Name="NumeProba" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="CodProba" Nullable="true" MaxLength="272" />
+          <Property Type="String" Name="TipAnaliza" Nullable="true" MaxLength="10" />
+        </ComplexType>
+        <ComplexType Name="sp_Get_Users_Result">
+          <Property Type="Guid" Name="UserId" Nullable="false" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="256" />
+          <Property Type="Boolean" Name="IsLockedOut" Nullable="false" />
+          <Property Type="String" Name="UserName" Nullable="false" MaxLength="256" />
+          <Property Type="String" Name="FirstName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="LastName" Nullable="true" MaxLength="50" />
+          <Property Type="Boolean" Name="IsAsoc" Nullable="true" />
+          <Property Type="Int32" Name="AsocId" Nullable="true" />
+          <Property Type="String" Name="UserCod" Nullable="true" MaxLength="30" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="fccl_v2ModelStoreContainer" CdmEntityContainer="FCCLEntities">
+          <EntitySetMapping Name="Intervals">
+            <EntityTypeMapping TypeName="fcclModel.Interval">
+              <MappingFragment StoreEntitySet="Interval">
+                <ScalarProperty Name="Application" ColumnName="Application" />
+                <ScalarProperty Name="MaxVal" ColumnName="MaxVal" />
+                <ScalarProperty Name="MinVal" ColumnName="MinVal" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Updated" ColumnName="Updated" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Machines">
+            <EntityTypeMapping TypeName="fcclModel.Machine">
+              <MappingFragment StoreEntitySet="Machine">
+                <ScalarProperty Name="LocalSavePathFormat" ColumnName="LocalSavePathFormat" />
+                <ScalarProperty Name="LocalDownloadPathFormat" ColumnName="LocalDownloadPathFormat" />
+                <ScalarProperty Name="Application" ColumnName="Application" />
+                <ScalarProperty Name="FileFilter" ColumnName="FileFilter" />
+                <ScalarProperty Name="RemotePath" ColumnName="RemotePath" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Updated" ColumnName="Updated" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Settings">
+            <EntityTypeMapping TypeName="fcclModel.Setting">
+              <MappingFragment StoreEntitySet="Setting">
+                <ScalarProperty Name="Application" ColumnName="Application" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Reports">
+            <EntityTypeMapping TypeName="fcclModel.Report">
+              <MappingFragment StoreEntitySet="Report">
+                <ScalarProperty Name="SampleCount" ColumnName="SampleCount" />
+                <ScalarProperty Name="PageCount" ColumnName="PageCount" />
+                <ScalarProperty Name="PrintDate" ColumnName="PrintDate" />
+                <ScalarProperty Name="TestDate" ColumnName="TestDate" />
+                <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+                <ScalarProperty Name="ObjectId" ColumnName="ObjectId" />
+                <ScalarProperty Name="ReportNumber" ColumnName="ReportNumber" />
+                <ScalarProperty Name="ReportType" ColumnName="ReportType" />
+                <ScalarProperty Name="Application" ColumnName="Application" />
+                <ScalarProperty Name="Updated" ColumnName="Updated" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Orders">
+            <EntityTypeMapping TypeName="fcclModel.Order">
+              <MappingFragment StoreEntitySet="Order">
+                <ScalarProperty Name="Application" ColumnName="Application" />
+                <ScalarProperty Name="SampleCount" ColumnName="SampleCount" />
+                <ScalarProperty Name="AnalyzedSampleCount" ColumnName="AnalyzedSampleCount" />
+                <ScalarProperty Name="Imported" ColumnName="Imported" />
+                <ScalarProperty Name="ReceivedDate" ColumnName="ReceivedDate" />
+                <ScalarProperty Name="SampleDate" ColumnName="SampleDate" />
+                <ScalarProperty Name="ClientName" ColumnName="ClientName" />
+                <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+                <ScalarProperty Name="FullOrderNumber" ColumnName="FullOrderNumber" />
+                <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+                <ScalarProperty Name="Updated" ColumnName="Updated" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="sp_Get_RegistruRegeptie" FunctionName="fccl_v2Model.Store.sp_Get_RegistruRegeptie">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="fcclModel.sp_Get_RegistruRegeptie_Result">
+                <ScalarProperty Name="NrComanda" ColumnName="NrComanda" />
+                <ScalarProperty Name="NumeCodPrelevator" ColumnName="NumeCodPrelevator" />
+                <ScalarProperty Name="NumeProba" ColumnName="NumeProba" />
+                <ScalarProperty Name="CodProba" ColumnName="CodProba" />
+                <ScalarProperty Name="TipAnaliza" ColumnName="TipAnaliza" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_Get_Users" FunctionName="fccl_v2Model.Store.sp_Get_Users">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="fcclModel.sp_Get_Users_Result">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="IsLockedOut" ColumnName="IsLockedOut" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="IsAsoc" ColumnName="IsAsoc" />
+                <ScalarProperty Name="AsocId" ColumnName="AsocId" />
+                <ScalarProperty Name="UserCod" ColumnName="UserCod" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

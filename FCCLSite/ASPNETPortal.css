@@ -1,0 +1,433 @@
+.HeadBg
+{
+    BACKGROUND-COLOR: #cc3333
+}
+BODY
+{
+    BACKGROUND-COLOR: white
+}
+.SiteTitle
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 20px;
+    COLOR: #cccc99;
+    FONT-FAMILY: Verdana Bold, Helvetica, sans-serif
+}
+.TabBg
+{
+    BORDER-LEFT-COLOR: white;
+    BORDER-BOTTOM-COLOR: white;
+    BORDER-TOP-COLOR: white;
+    BACKGROUND-COLOR: white;
+    BORDER-RIGHT-COLOR: white
+}
+.OtherTabsBg
+{
+    BORDER-LEFT-COLOR: black;
+    BORDER-BOTTOM-COLOR: black;
+    BORDER-TOP-COLOR: black;
+    BACKGROUND-COLOR: dimgray;
+    BORDER-RIGHT-COLOR: black
+}
+.SelectedTab
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 13px;
+    COLOR: darkred;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif
+}
+.OtherTabs
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 13px;
+    COLOR: gainsboro;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+A.OtherTabs:link
+{
+    COLOR: #eeeeee;
+    TEXT-DECORATION: none
+}
+A.OtherTabs:visited
+{
+    COLOR: #eeeeee;
+    TEXT-DECORATION: none
+}
+A.OtherTabs:active
+{
+    COLOR: #eeeeee;
+    TEXT-DECORATION: none
+}
+A.OtherTabs:hover
+{
+    COLOR: white;
+    TEXT-DECORATION: underline
+}
+.SiteLink
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif
+}
+A.SiteLink:link
+{
+    COLOR: white;
+    TEXT-DECORATION: none
+}
+A.SiteLink:visited
+{
+    COLOR: #eeeeee;
+    TEXT-DECORATION: none
+}
+A.SiteLink:active
+{
+    COLOR: #eeeeee;
+    TEXT-DECORATION: none
+}
+A.SiteLink:hover
+{
+    COLOR: white;
+    TEXT-DECORATION: underline
+}
+.Accent
+{
+    FONT-WEIGHT: bold;
+    COLOR: red
+}
+.Message
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #eeeeee
+}
+.ItemTitle
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: darkred;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif
+}
+.Head
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 20px;
+    COLOR: #666644;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif
+}
+.SubHead
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: darkred;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif
+}
+.SubSubHead
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif
+}
+.Normal
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    LINE-HEIGHT: 12px;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif
+}
+.NormalTextBox
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 12px;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif
+}
+.NormalRed
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: red;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif
+}
+.NormalBold
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif
+}
+.CommandButton
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif
+}
+A.CommandButton:link
+{
+    COLOR: darkred;
+    TEXT-DECORATION: underline
+}
+A.CommandButton:visited
+{
+    COLOR: darkred;
+    TEXT-DECORATION: underline
+}
+A.CommandButton:active
+{
+    COLOR: darkred;
+    TEXT-DECORATION: underline
+}
+A.CommandButton:hover
+{
+    COLOR: red;
+    TEXT-DECORATION: underline
+}
+H1
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 20px;
+    COLOR: #666644;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif
+}
+H2
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 20px;
+    COLOR: #666644;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif
+}
+H3
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 12px;
+    COLOR: darkred;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif
+}
+H4
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 12px;
+    COLOR: darkred;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif
+}
+H5
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: darkred;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif
+}
+DT
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: darkred;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif
+}
+H6
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: darkred;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif
+}
+TFOOT
+{
+    FONT-SIZE: 12px;
+    COLOR: darkred;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif
+}
+THEAD
+{
+    FONT-SIZE: 12px;
+    COLOR: darkred;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif
+}
+TH
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12px;
+    VERTICAL-ALIGN: baseline;
+    COLOR: darkred;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif
+}
+A:link
+{
+    COLOR: darkred;
+    TEXT-DECORATION: none
+}
+A:visited
+{
+    COLOR: darkred;
+    TEXT-DECORATION: none
+}
+A:active
+{
+    COLOR: darkred;
+    TEXT-DECORATION: none
+}
+A:hover
+{
+    COLOR: red;
+    TEXT-DECORATION: underline
+}
+SMALL
+{
+    FONT-SIZE: 8px
+}
+BIG
+{
+    FONT-SIZE: 14px
+}
+BLOCKQUOTE
+{
+    FONT-FAMILY: Lucida Console, monospace
+}
+PRE
+{
+    FONT-FAMILY: Lucida Console, monospace
+}
+UL LI
+{
+    LIST-STYLE-TYPE: square
+}
+UL LI LI
+{
+    LIST-STYLE-TYPE: disc
+}
+UL LI LI LI
+{
+    LIST-STYLE-TYPE: circle
+}
+OL LI
+{
+    LIST-STYLE-TYPE: decimal
+}
+OL OL LI
+{
+    LIST-STYLE-TYPE: lower-alpha
+}
+OL OL OL LI
+{
+    LIST-STYLE-TYPE: lower-roman
+}
+HR
+{
+    HEIGHT: 1pt;
+    TEXT-ALIGN: left
+}
+TD.column
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 0.8em;
+    BACKGROUND-IMAGE: url(../images/forumColumnBackground.gif);
+    COLOR: white;
+    BACKGROUND-REPEAT: repeat-x;
+    BACKGROUND-COLOR: #5286BB
+}
+TD.h1a
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 0.8em;
+    BACKGROUND-IMAGE: url(../images/forumHeaderBackgroundAlternate.gif);
+    COLOR: #4455aa;
+    BACKGROUND-REPEAT: repeat-x;
+    BACKGROUND-COLOR: #e7e3e7;
+    TEXT-DECORATION: none
+}
+TD.h1
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 0.8em;
+    BACKGROUND-IMAGE: url(../images/forumHeaderBackground.gif);
+    COLOR: white;
+    BACKGROUND-COLOR: #2b28b0
+
+}
+TD.f
+{
+    FONT-SIZE: 0.71em;
+    BACKGROUND-COLOR: #ffffcc
+}
+TD.cSurvey
+{
+    FONT-SIZE: 0.8em;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: #ffffcc
+}
+TD.cSurvey1
+{
+    FONT-SIZE: 1em;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: #ffffcc
+}
+TD.ControlPanelTabInactive
+{
+	font-weight: normal;
+	font-size: 0.7em;
+	color: #5286bb;
+	background-repeat: repeat-x;
+	font-family: Arial;
+	background-color: #e7e3e7;
+	text-decoration: none;
+}
+TD.ControlPanelTabActive
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 0.7em;
+    COLOR: white;
+    BACKGROUND-REPEAT: repeat-x;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: #5286BB
+
+}
+TD.ControlPanelTabLine
+{
+    BACKGROUND-COLOR: #990033
+}
+TD.f2
+{
+    FONT-SIZE: 0.8em;
+    BACKGROUND-COLOR: #ffffcc
+}
+TD.fh
+{
+    FONT-SIZE: 0.71em;
+    BACKGROUND-IMAGE: url(../images/fhBg.gif);
+    BACKGROUND-REPEAT: repeat-x;
+    BACKGROUND-COLOR: #ffffff
+}
+TD.fh2
+{
+    FONT-SIZE: 0.71em
+}
+TD.fh3
+{
+    BORDER-TOP: #ddeeff 1px solid;
+    FONT-SIZE: 0.71em;
+    BORDER-LEFT: #ddeeff 1px solid;
+    BACKGROUND-COLOR: #ffffff
+}
+TD.fh3a
+{
+    BORDER-TOP: #ddeeff 1px solid;
+    FONT-SIZE: 0.71em;
+    BORDER-LEFT: #ddeeff 1px solid;
+    BACKGROUND-COLOR: #f6fbff
+}
+TD.fh4
+{
+    BORDER-TOP: #ddeeff 1px solid;
+    FONT-SIZE: 0.71em;
+    BORDER-LEFT: #ddeeff 1px solid;
+    BACKGROUND-COLOR: #ffffff
+}
+.tableBorder
+{
+    BORDER-RIGHT: 1px outset;
+    BORDER-TOP: 1px outset;
+    BORDER-LEFT: 1px outset;
+    BORDER-BOTTOM: 1px outset;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: #ffffff
+}

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="fccl_v2ModelStoreContainer" CdmEntityContainer="FCCLEntities">
+    <EntitySetMapping Name="Intervals">
+      <EntityTypeMapping TypeName="fcclModel.Interval">
+        <MappingFragment StoreEntitySet="Interval">
+          <ScalarProperty Name="Application" ColumnName="Application" />
+          <ScalarProperty Name="MaxVal" ColumnName="MaxVal" />
+          <ScalarProperty Name="MinVal" ColumnName="MinVal" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Machines">
+      <EntityTypeMapping TypeName="fcclModel.Machine">
+        <MappingFragment StoreEntitySet="Machine">
+          <ScalarProperty Name="LocalSavePathFormat" ColumnName="LocalSavePathFormat" />
+          <ScalarProperty Name="LocalDownloadPathFormat" ColumnName="LocalDownloadPathFormat" />
+          <ScalarProperty Name="Application" ColumnName="Application" />
+          <ScalarProperty Name="FileFilter" ColumnName="FileFilter" />
+          <ScalarProperty Name="RemotePath" ColumnName="RemotePath" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Settings">
+      <EntityTypeMapping TypeName="fcclModel.Setting">
+        <MappingFragment StoreEntitySet="Setting">
+          <ScalarProperty Name="Application" ColumnName="Application" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reports">
+      <EntityTypeMapping TypeName="fcclModel.Report">
+        <MappingFragment StoreEntitySet="Report">
+          <ScalarProperty Name="SampleCount" ColumnName="SampleCount" />
+          <ScalarProperty Name="PageCount" ColumnName="PageCount" />
+          <ScalarProperty Name="PrintDate" ColumnName="PrintDate" />
+          <ScalarProperty Name="TestDate" ColumnName="TestDate" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="ObjectId" ColumnName="ObjectId" />
+          <ScalarProperty Name="ReportNumber" ColumnName="ReportNumber" />
+          <ScalarProperty Name="ReportType" ColumnName="ReportType" />
+          <ScalarProperty Name="Application" ColumnName="Application" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="fcclModel.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="Application" ColumnName="Application" />
+          <ScalarProperty Name="SampleCount" ColumnName="SampleCount" />
+          <ScalarProperty Name="AnalyzedSampleCount" ColumnName="AnalyzedSampleCount" />
+          <ScalarProperty Name="Imported" ColumnName="Imported" />
+          <ScalarProperty Name="ReceivedDate" ColumnName="ReceivedDate" />
+          <ScalarProperty Name="SampleDate" ColumnName="SampleDate" />
+          <ScalarProperty Name="ClientName" ColumnName="ClientName" />
+          <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+          <ScalarProperty Name="FullOrderNumber" ColumnName="FullOrderNumber" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_Get_RegistruRegeptie" FunctionName="fccl_v2Model.Store.sp_Get_RegistruRegeptie">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="fcclModel.sp_Get_RegistruRegeptie_Result">
+          <ScalarProperty Name="NrComanda" ColumnName="NrComanda" />
+          <ScalarProperty Name="NumeCodPrelevator" ColumnName="NumeCodPrelevator" />
+          <ScalarProperty Name="NumeProba" ColumnName="NumeProba" />
+          <ScalarProperty Name="CodProba" ColumnName="CodProba" />
+          <ScalarProperty Name="TipAnaliza" ColumnName="TipAnaliza" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Get_Users" FunctionName="fccl_v2Model.Store.sp_Get_Users">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="fcclModel.sp_Get_Users_Result">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="IsLockedOut" ColumnName="IsLockedOut" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="IsAsoc" ColumnName="IsAsoc" />
+          <ScalarProperty Name="AsocId" ColumnName="AsocId" />
+          <ScalarProperty Name="UserCod" ColumnName="UserCod" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

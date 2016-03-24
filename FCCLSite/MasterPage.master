@@ -1,0 +1,193 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="MasterPage" Debug="true" Codebehind="MasterPage.master.cs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Home Page</title>
+ 	<script type="text/javascript" language="javascript" src="Scripts/jquery-2.1.3.min.js"></script> 
+	<script type="text/javascript" language="javascript" src="Scripts/jquery-ui-1.11.4.min.js"></script>
+	<link href="Content/themes/base/all.css" rel="stylesheet" />
+ 
+  <style type="text/css">
+    .heading {FONT-WEIGHT:bold;FONT-SIZE:10pt;COLOR:#000000;FONT-FAMILY:arial} 
+    .data {FONT-SIZE:9pt;COLOR:#000000;FONT-FAMILY:arial} 
+     </style>    
+<script language="javascript">
+<!--
+function DateValidate(sender, args) {
+ 
+    args.IsValid = true;
+    var sDate = args.Value;
+    if (sDate == "") return true;
+    var iDay, iMonth, iYear;
+    var arrValues;
+    var today = new Date();
+    arrValues = sDate.split("/");
+    iDay = arrValues[0];
+    iMonth = arrValues[1];
+    iYear = arrValues[2];
+    if ((iMonth == null) || (iYear == null)) {args.IsValid = false; return;}
+    if ((iDay > 31) || (iMonth > 12) || 
+        (iYear < 1900 || iYear > today.getFullYear())) 
+     {args.IsValid = false; return;}
+    var dummyDate = new Date(iYear, iMonth - 1, iDay);
+    if ((dummyDate.getDate() != iDay) || 
+      (dummyDate.getMonth() != iMonth - 1) || 
+      (dummyDate.getFullYear() != iYear)) 
+      {  //alert("Invalid date");
+         args.IsValid = false;
+         return;
+         }
+    return;
+}
+
+function DateValidateReq(sender, args) {
+ 
+    args.IsValid = true;
+    var sDate = args.Value;
+    if (sDate == "") return false;
+    var iDay, iMonth, iYear;
+    var arrValues;
+    var today = new Date();
+    arrValues = sDate.split("/");
+    iDay = arrValues[0];
+    iMonth = arrValues[1];
+    iYear = arrValues[2];
+    if ((iMonth == null) || (iYear == null)) {args.IsValid = false; return;}
+    if ((iDay > 31) || (iMonth > 12) || 
+        (iYear < 1900 || iYear > today.getFullYear())) 
+     {args.IsValid = false; return;}
+    var dummyDate = new Date(iYear, iMonth - 1, iDay);
+    if ((dummyDate.getDate() != iDay) || 
+      (dummyDate.getMonth() != iMonth - 1) || 
+      (dummyDate.getFullYear() != iYear)) 
+      {  //alert("Invalid date");
+         args.IsValid = false;
+         return;
+         }
+    return;
+}
+// -->
+</script>     
+</head>
+<body>
+    <form id="form1" runat="server">
+   <asp:Panel Width="90%" runat=server ID=panelHead>
+    <div  style="background-color:cornflowerblue">
+
+        <asp:Image ID="Image1" runat="server" ImageUrl="images/header.bmp" /><br />
+    </div>
+    <div>
+    <table cellpadding=0 cellspacing=0 bgcolor=cornflowerblue width=100% border=0>
+    <tr>
+    <td style="height: 20px; width: 17%;">
+        <asp:Menu ID="Menu1" runat="server"  Font-Bold="True" Font-Names="Times New Roman"
+            Font-Size="Medium" ForeColor="White" BorderStyle="None" BorderWidth="0px" DynamicVerticalOffset="10">
+            <Items>
+                <asp:MenuItem Text="Pagina principala" Value="Home" NavigateUrl="~/Login.aspx"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+    </td>
+    <td style="height: 20px; width: 17%;">
+        <asp:Menu ID="Menu2" runat="server" Font-Bold="True" Font-Size="Medium" ForeColor="White" OnMenuItemClick="Menu2_MenuItemClick">
+             <DynamicHoverStyle BackColor="MediumSeaGreen" />
+            <DynamicMenuStyle BackColor="CornflowerBlue" />
+            <DynamicMenuItemStyle Font-Bold="True" Font-Names="Arial" Font-Size="Small" VerticalPadding="2px" />
+            <Items>
+                <asp:MenuItem Text="Mostre" Value="Mostre">
+                    <asp:MenuItem Text="Validare" Value="Validare" NavigateUrl="~/ValidareMostre.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Actualizare" Value="Actualizare" NavigateUrl="~/EditareMostre.aspx"></asp:MenuItem>
+                </asp:MenuItem>
+            </Items>
+        </asp:Menu>
+    
+    </td>
+    <td style="height:20px; width:17%">
+        <asp:Menu ID="Menu3" runat="server" BackColor="CornflowerBlue" BorderColor="WhiteSmoke"
+            BorderStyle="None" Font-Bold="True" Font-Names="Arial" Font-Size="Small" ForeColor="White"
+            OnMenuItemClick="Menu3_MenuItemClick" Style="font-weight: bold; font-family: Arial;
+            background-color: cornflowerblue">
+                <DynamicHoverStyle BackColor="MediumSeaGreen" />
+            <DynamicMenuStyle BackColor="CornflowerBlue" />
+            <DynamicMenuItemStyle Font-Bold="True" Font-Names="Arial" Font-Size="Small" VerticalPadding="2px" />
+
+            <Items>
+                <asp:MenuItem Text="Date utile" Value="Editare">
+                    <asp:MenuItem Text="Fabrici" Value="Fabrici" NavigateUrl="~/EditareFabrici.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Ferme/CCL" Value="Ferme/CCL" NavigateUrl="~/EditareFerme.aspx"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/EditareFermieri.aspx" Text="Fermieri" Value="Fermieri">
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Prelevatori" Value="Prelevatori" NavigateUrl="~/EditarePrelevatori.aspx"></asp:MenuItem>
+                </asp:MenuItem>
+            </Items>
+        </asp:Menu>
+    </td>
+    <td style="height:20px; width:17%">
+        <asp:Menu ID="Menu4" runat="server" Font-Bold="True" Font-Names="Arial" Font-Size="Small"
+            ForeColor="White" Style="background-color: cornflowerblue">
+                <DynamicHoverStyle BackColor="MediumSeaGreen" />
+            <DynamicMenuStyle BackColor="CornflowerBlue" />
+            <DynamicMenuItemStyle Font-Bold="True" Font-Names="Arial" Font-Size="Small" VerticalPadding="2px" />
+            <Items>
+                <asp:MenuItem Text="Rapoarte" Value="Rapoarte">
+                    <asp:MenuItem NavigateUrl="~/RaportFabrica4.aspx" Text="R. Fabrica Zilnic" 
+                        Value="R. Fabrica Zilnic"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/RaportFerme4.aspx" Text="R. Ferma" 
+                        Value="R. Ferma"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/RaportFCB4.aspx" Text="R. FCB" Value="R. FCB">
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/RaportFabricaIntre4.aspx" Text="R. Fabrica" 
+                        Value="R. Fabrica"></asp:MenuItem>
+                </asp:MenuItem>
+            </Items>
+        </asp:Menu>
+    </td>
+    <td style="height:20px; width:17%">
+        <asp:Menu ID="Menu5" runat="server" Font-Bold="True" Font-Names="Arial" Font-Size="Small"
+            ForeColor="White" Style="background-color: cornflowerblue">
+            <DynamicHoverStyle BackColor="MediumSeaGreen" />
+            <DynamicMenuStyle BackColor="CornflowerBlue" />
+            <DynamicMenuItemStyle Font-Bold="True" Font-Names="Arial" Font-Size="Small" VerticalPadding="2px" />
+            <Items>
+                <asp:MenuItem Text="Trimitere rapoarte" Value="Email">
+                    <asp:MenuItem Text="Email manual" Value="EmailM" NavigateUrl="~/EmailManual.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Email Automat Ferme" Value="EmailFerme" NavigateUrl="~/EmailAutomat.aspx?ferme=1"></asp:MenuItem>
+                    <asp:MenuItem Text="Email Automat Fabrici" Value="EmailFabrici" NavigateUrl="~/EmailAutomat.aspx?ferme=0"></asp:MenuItem>
+                    <asp:MenuItem Text="Trimitere Sms" Value="TestSms" NavigateUrl="~/SmsTest.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Trimitere Sms Ferme" Value="SendSms" NavigateUrl="~/SmsAutomat.aspx"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/SmsList.aspx" Text="Test Sms Ferme" Value="Test Sms Ferme"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/SmsArchive.aspx" Text="Arhiva Sms" Value="Arhiva Sms"></asp:MenuItem>
+                </asp:MenuItem>
+            </Items>
+        </asp:Menu>
+    </td>
+      <td style="height:20px; width:15%">
+        <asp:Menu ID="Menu6" runat="server" Font-Bold="True" Font-Names="Arial" Font-Size="Small"
+            ForeColor="White" Style="background-color: cornflowerblue">
+            <DynamicHoverStyle BackColor="MediumSeaGreen" />
+            <DynamicMenuStyle BackColor="CornflowerBlue" />
+            <DynamicMenuItemStyle Font-Bold="True" Font-Names="Arial" Font-Size="Small" VerticalPadding="2px" />
+            <Items>
+                <asp:MenuItem Text="Rapoarte interne" Value="RapInt">
+                    <asp:MenuItem Text="Registru rapoarte" Value="RRap" NavigateUrl="~/Registru.aspx"></asp:MenuItem>                  
+                    <asp:MenuItem Text="Registru comenzi" Value="RCom" NavigateUrl="~/Comenzi.aspx"></asp:MenuItem>                  
+                    <asp:MenuItem Text="Registru Receptii" Value="RRec" NavigateUrl="~/Receptii.aspx"></asp:MenuItem>                  
+                 </asp:MenuItem>
+            </Items>
+        </asp:Menu>
+    </td>
+    </tr>
+    
+    </table>
+   <br/>
+   </div>
+   </asp:Panel>
+    <div>
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+       
+        </asp:contentplaceholder>
+    </div>
+    </form>
+</body>
+</html>

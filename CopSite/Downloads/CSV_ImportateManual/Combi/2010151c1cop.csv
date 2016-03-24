@@ -1,0 +1,8 @@
+0;1;2;3;4;5;6;7;8;9;10
+Batch nr    ;Date      ;Samples;Pilots ;Operator;Company nr;          ;Batch type;Measurement;Day nr ;Product         
+2010151c1   ;20/10/2015;100    ;0      ;Ramona  ;t21u59    ;          ;Delta     ;Somascope  ;14     ;Cow-milk        
+;;;;;;;;;;
+RowNr;Date;Time;Id;Fat;Protein;Lactose;Solids;FPD;Cells;Q-Value;Remark
+  Nr;      Date;        Time;        Id;    Fat;Protein;Lactose; Solids;Frz pnt;    Cells;Q-Value;  Remark
+    ;          ;            ;     Pilot;  0.00 ;  0.00 ;  0.00 ;  0.00 ;     0 ;       0 ;   0.0 ;        
+   1;20.10.2015;    12:07:35;1234567890;       ;       ;       ;       ;       ;     363 ;  60.9 ;        

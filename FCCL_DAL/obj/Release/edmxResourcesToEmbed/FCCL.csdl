@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="fcclModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="FCCLEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Intervals" EntityType="fcclModel.Interval" />
+    <EntitySet Name="Machines" EntityType="fcclModel.Machine" />
+    <EntitySet Name="Settings" EntityType="fcclModel.Setting" />
+    <EntitySet Name="Reports" EntityType="fcclModel.Report" />
+    <EntitySet Name="Orders" EntityType="fcclModel.Order" />
+    <FunctionImport Name="sp_Get_RegistruRegeptie" ReturnType="Collection(fcclModel.sp_Get_RegistruRegeptie_Result)">
+      <Parameter Name="TestDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="sp_Get_Users" ReturnType="Collection(fcclModel.sp_Get_Users_Result)">
+      <Parameter Name="userName" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <EntityType Name="Interval">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Updated" Type="DateTime" Precision="3" />
+    <Property Name="Type" Type="Int16" Nullable="false" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="63" FixedLength="false" Unicode="false" />
+    <Property Name="MinVal" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="MaxVal" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Application" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Machine">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Updated" Type="DateTime" Precision="3" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="63" FixedLength="false" Unicode="false" />
+    <Property Name="RemotePath" Type="String" Nullable="false" MaxLength="511" FixedLength="false" Unicode="false" />
+    <Property Name="FileFilter" Type="String" Nullable="false" MaxLength="63" FixedLength="false" Unicode="false" />
+    <Property Name="Application" Type="Int16" Nullable="false" />
+    <Property Name="LocalDownloadPathFormat" Type="String" MaxLength="511" FixedLength="false" Unicode="false" />
+    <Property Name="LocalSavePathFormat" Type="String" Nullable="false" MaxLength="511" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Setting">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="63" FixedLength="false" Unicode="false" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="63" FixedLength="false" Unicode="false" />
+    <Property Name="Application" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Report">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Updated" Type="DateTime" Precision="3" />
+    <Property Name="Application" Type="Int16" Nullable="false" />
+    <Property Name="ReportType" Type="Int16" Nullable="false" />
+    <Property Name="ReportNumber" Type="Int64" Nullable="false" />
+    <Property Name="ObjectId" Type="Int32" Nullable="false" />
+    <Property Name="ObjectName" Type="String" Nullable="false" MaxLength="511" FixedLength="false" Unicode="true" />
+    <Property Name="TestDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="PrintDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="PageCount" Type="Int32" />
+    <Property Name="SampleCount" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Updated" Type="DateTime" Precision="3" />
+    <Property Name="OrderNumber" Type="Int64" Nullable="false" />
+    <Property Name="FullOrderNumber" Type="String" Nullable="false" MaxLength="63" FixedLength="false" Unicode="false" />
+    <Property Name="ClientId" Type="Int32" Nullable="false" />
+    <Property Name="ClientName" Type="String" Nullable="false" MaxLength="511" FixedLength="false" Unicode="false" />
+    <Property Name="SampleDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ReceivedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Imported" Type="Boolean" Nullable="false" />
+    <Property Name="AnalyzedSampleCount" Type="Int32" />
+    <Property Name="SampleCount" Type="Int32" />
+    <Property Name="Application" Type="Int16" />
+  </EntityType>
+  <ComplexType Name="sp_Get_RegistruRegeptie_Result">
+    <Property Type="String" Name="NrComanda" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="NumeCodPrelevator" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="NumeProba" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="CodProba" Nullable="true" MaxLength="272" />
+    <Property Type="String" Name="TipAnaliza" Nullable="true" MaxLength="10" />
+  </ComplexType>
+  <ComplexType Name="sp_Get_Users_Result">
+    <Property Type="Guid" Name="UserId" Nullable="false" />
+    <Property Type="String" Name="Email" Nullable="true" MaxLength="256" />
+    <Property Type="Boolean" Name="IsLockedOut" Nullable="false" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="256" />
+    <Property Type="String" Name="FirstName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="true" MaxLength="50" />
+    <Property Type="Boolean" Name="IsAsoc" Nullable="true" />
+    <Property Type="Int32" Name="AsocId" Nullable="true" />
+    <Property Type="String" Name="UserCod" Nullable="true" MaxLength="30" />
+  </ComplexType>
+</Schema>

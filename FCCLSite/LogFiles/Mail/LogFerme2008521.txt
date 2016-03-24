@@ -1,0 +1,17 @@
+21/05/2008 16:00:52 ==> *****Start send mail*****
+21/05/2008 16:01:22 ==> *****Start send mail*****
+21/05/2008 16:05:25 ==> *****Start send mail*****
+21/05/2008 16:05:25 ==> Fermei: -SCAdaProdcomSRL.pdf cu adresa de email: ovidiuonisor@yahoo.com i-a fost trimis fisierul: RaportFerma20_05_2008_103-SCAdaProdcomSRL.pdf
+21/05/2008 16:05:25 ==> Fermei: -SCJuanitoSRL.pdf cu adresa de email: tofana.v@iezuiti.ro i-a fost trimis fisierul: RaportFerma20_05_2008_1033-SCJuanitoSRL.pdf
+21/05/2008 16:05:25 ==> Fermei: -SCMeierhofSRL.pdf cu adresa de email: erno.botos@bardeau.ro; georg.bardeau@bardeau.ro; constantin.cizmas@bardeau.ro; office@bardeau.ro i-a fost trimis fisierul: RaportFerma20_05_2008_1071-SCMeierhofSRL.pdf
+21/05/2008 16:05:25 ==> Fermei: -SCAuersbachSRL.pdf cu adresa de email: erno.botos@bardeau.ro; georg.bardeau@bardeau.ro; constantin.cizmas@bardeau.ro; office@bardeau.ro i-a fost trimis fisierul: RaportFerma20_05_2008_1072-SCAuersbachSRL.pdf
+21/05/2008 16:05:25 ==> Fermei: -SCBautehnikSRL.pdf cu adresa de email: erno.botos@bardeau.ro; georg.bardeau@bardeau.ro; constantin.cizmas@bardeau.ro; office@bardeau.ro i-a fost trimis fisierul: RaportFerma20_05_2008_1073-SCBautehnikSRL.pdf
+21/05/2008 16:05:25 ==> Fermei: -SCAgronovaImpexSRL.pdf cu adresa de email: agronova2005@yahoo.com i-a fost trimis fisierul: RaportFerma20_05_2008_1198-SCAgronovaImpexSRL.pdf
+21/05/2008 16:05:26 ==> Fermei: -SCSeralexSRL.pdf cu adresa de email: demjenerzsebet@yahoo.com i-a fost trimis fisierul: RaportFerma20_05_2008_232-SCSeralexSRL.pdf
+21/05/2008 16:05:26 ==> Fermei: -ASAgrindSATasnad.pdf cu adresa de email: agrindtasnad@yahoo.com i-a fost trimis fisierul: RaportFerma20_05_2008_25-ASAgrindSATasnad.pdf
+21/05/2008 16:05:26 ==> Fermei: -PaNagyVasileAdyEndre.pdf cu adresa de email: caraianeugen@yahoo.com i-a fost trimis fisierul: RaportFerma20_05_2008_303-PaNagyVasileAdyEndre.pdf
+21/05/2008 16:05:26 ==> Fermei: -SCCITSASantau.pdf cu adresa de email: cit_santau@yahoo.com i-a fost trimis fisierul: RaportFerma20_05_2008_33-SCCITSASantau.pdf
+21/05/2008 16:05:26 ==> Fermei: -SCAgrijerisSRL.pdf cu adresa de email: christel.buyse@skynet.be i-a fost trimis fisierul: RaportFerma20_05_2008_3754-SCAgrijerisSRL.pdf
+21/05/2008 16:05:27 ==> Fermei: -SCWekerleSRL.pdf cu adresa de email: dwekerle@yahoo.com i-a fost trimis fisierul: RaportFerma20_05_2008_440-SCWekerleSRL.pdf
+21/05/2008 16:05:27 ==> Fermei: -FermaPredoiuDan.pdf cu adresa de email: loredana_lucia_predoiu@yahoo.com i-a fost trimis fisierul: RaportFerma20_05_2008_459-FermaPredoiuDan.pdf
+21/05/2008 16:05:27 ==> Fermei: -SCPinzgauSRL.pdf cu adresa de email: erno.botos@bardeau.ro; georg.bardeau@bardeau.ro; constantin.cizmas@bardeau.ro; office@bardeau.ro i-a fost trimis fisierul: RaportFerma20_05_2008_61-SCPinzgauSRL.pdf

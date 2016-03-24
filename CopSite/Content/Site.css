@@ -1,0 +1,68 @@
+﻿.heading {
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    COLOR: #000000;
+    FONT-FAMILY: arial;
+}
+
+.headgreen {
+    FONT-SIZE: 10pt;
+    COLOR: #3CB371;
+    FONT-FAMILY: arial;
+}
+
+.data {
+    FONT-SIZE: 9pt;
+    COLOR: #000000;
+    FONT-FAMILY: arial;
+}
+
+.style1 {
+    height: 20px;
+    width: 81px;
+}
+
+.style2 {
+    width: 159px;
+}
+
+.style3 {
+    width: 125px;
+}
+
+.grass, .grass TD, .grass TH {
+    background-image: url('images/green-grass.jpg');
+}
+
+.leftbutton {
+    padding-left: 0pt;
+}
+
+.gridCheckBox {
+    text-align: center;
+}
+
+    .gridCheckBox input[type='checkbox'] {
+        width: 20px;
+        height: 20px;
+    }
+
+.float-right {
+    float: right;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+.table td {
+    border: 1px solid black;
+      background-color: #E3EAEB;
+    padding: 3px;
+}
+
+.failureNotification
+{
+    font-size: 1.2em;
+    color: Red;
+}
