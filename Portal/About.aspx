@@ -12,10 +12,10 @@ Laptelui </span>
 </font> 
 </p>
 <p style="margin-top: 0; margin-bottom: 0"><font size="2">Adresa:&nbsp;&nbsp;&nbsp;Str. 
-Avram Iancu, nr. 255, Floresti, Cluj
+Piața 1 Mai 1-2, Cluj-Napoca
 </font> 
 </p>
-<p style="margin-top: 0; margin-bottom: 0"><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cod Postal: 407280,  Romania
+<p style="margin-top: 0; margin-bottom: 0"><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cod Postal: 400000,  Romania
 </font>
 </p>
 <p style="margin-top: 0; margin-bottom: 0"><font size="2">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:office@control-lapte.ro">office@control-lapte.ro</a> </font> 

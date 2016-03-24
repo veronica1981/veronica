@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <h2>
-        Bine ati venit pe site-ul FCCL Floresti!
+        Bine ati venit pe site-ul FCCL!
     </h2>
     <p>
         Pentru mai multe detalii accesati <a href="http://www.control-lapte.ro">www.control-lapte.ro</a> 
